@@ -1,11 +1,19 @@
+
 *{
     padding: 0;
     margin:0;
+    font-family: 'Roboto', sans-serif;
+    color: white;
 }
 body{
     display: grid;
     grid-template-columns: minmax(150px, 20vw) minmax(250px, 75vw) minmax(250px, 25vw);
     grid-template-rows: minmax(150px,20vh) minmax(250px,80vh);
+    background-color: #111827;
+    background-image: url(./assets/Logo.png);
+    background-position: 80% 25%;
+    background-size: 70%;
+    background-repeat: no-repeat;
 }
 .sidebar img {
     height: 2vw;
@@ -20,7 +28,7 @@ body{
 .header{
     display: grid;
     grid-template: 1fr 1fr / 1.5fr 1fr;
-    background-color: rgb(7, 118, 198);
+    background-color:#be123c;
     grid-row: 1/2;
     grid-column: 2/4;
     box-shadow: 10px 5px 50px black;
@@ -81,6 +89,7 @@ body{
     height: 2vw;
     width: 2vw;
     background: none;
+    border: none;
     border-radius: 30px;
     padding:3px;
     margin-right: 2vw;
@@ -104,14 +113,14 @@ body{
     width: 6vw;
     border-radius: 30px;
     border: none;
-    background-color: aliceblue;
+    background-color: #374151;
 }
 .sidebar{
     display: grid;
     grid-template-rows: minmax(150px,20vh) minmax(150px,40vh) minmax(150px,35vh);
     grid-template-columns: minmax(250px,20vw);
     justify-items: center;
-    background-color: skyblue;
+    background-color: #881337;
     grid-row-start: 1;
     grid-row-end: 3;
     grid-column-start: 1;
@@ -161,18 +170,21 @@ body{
 }
 .projects div {
     margin: 1vw;
-    background-color: yellow;
+    background-color: #4c0519;
     height: 20vh;
     width: 25vw;
     align-self: start;
-
+    background-image: url(./assets/Logo.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 50%;
     display: grid;
     grid-template-rows: minmax(10px, 5vh) minmax(10px, 10vh) minmax(10px, 4vh);
     font-size: min(1.4vw,1.4vh);
     padding: .2vw;
 }
 .trending, .announcements{
-    background-color: purple;
+    background-color: #fda4af;
     height: 30vh;
     width: 17vw;
     display: flex;
@@ -180,6 +192,10 @@ body{
     font-size: min(1.2vw,1.2vh);
     padding: 0.7vw;
     place-content: center;
+    background-image: url(./assets/Logo.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 50%;
 }
 .projects > div, .announcements,.trending{
     border-radius: 10px;
